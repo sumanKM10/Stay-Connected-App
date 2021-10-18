@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stayconnected">
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name=".MyApplication"
+		android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Stay Connected"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StayConnected">
+		<activity android:name=".ShowList"></activity>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".PostDetails" />
+        <activity
+            android:name=".CommentActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".OthersProfile" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".SearchUsers"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="preloaded_fonts"
+                   android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>
