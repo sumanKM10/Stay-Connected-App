@@ -1,7 +1,7 @@
 # Stay-Connected-App
 Stay Connected app is social media android application.
 
-#App Developer Suman K.M
+# App Developer Suman K.M
 Step 1: Download Zip file through Code option.
 Step 2: Extract the zip file.
 Step 3: Open the Android Studio. 
